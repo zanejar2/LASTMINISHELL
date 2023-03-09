@@ -6,7 +6,7 @@
 /*   By: zanejar <zanejar@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 06:42:44 by zanejar           #+#    #+#             */
-/*   Updated: 2023/03/09 08:48:41 by zanejar          ###   ########.fr       */
+/*   Updated: 2023/03/09 09:14:34 by zanejar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,7 @@ t_env	*ft_lstne(char *var, char *value)
 {
 	t_env	*htr;
 
-	htr = malloc(sizeof(t_env));
-	if (!htr)
-		return (NULL);
+	htr = ft_malloc(sizeof(t_env));
 	htr->var = ft_strdup(var);
 	htr->value = ft_strdup(value);
 	htr->next = NULL;

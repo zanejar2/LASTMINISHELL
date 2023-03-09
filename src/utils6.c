@@ -6,7 +6,7 @@
 /*   By: zanejar <zanejar@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 06:45:24 by zanejar           #+#    #+#             */
-/*   Updated: 2023/03/09 07:26:55 by zanejar          ###   ########.fr       */
+/*   Updated: 2023/03/09 09:14:51 by zanejar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,9 +40,7 @@ char	*ft_itoa(int n)
 	if (nbr == 0)
 		return (ft_strdup("0"));
 	len = ft_countlen(nbr);
-	ptr = malloc(sizeof(char) * len + 1);
-	if (!ptr)
-		return (0);
+	ptr = ft_malloc(sizeof(char) * len + 1);
 	if (nbr < 0)
 	{
 		nbr = nbr * (-1);

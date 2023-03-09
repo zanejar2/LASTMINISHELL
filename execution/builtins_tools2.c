@@ -6,7 +6,7 @@
 /*   By: zanejar <zanejar@student.1337.ma>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 06:43:28 by zanejar           #+#    #+#             */
-/*   Updated: 2023/03/09 06:43:29 by zanejar          ###   ########.fr       */
+/*   Updated: 2023/03/09 09:15:03 by zanejar          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,10 +45,8 @@ int	check_dup(t_env	**tenv, char *s)
 	if (root)
 	{
 		root->value = ft_search(s, '=');
-		free(str);
 		return (1);
 	}
-	free(str);
 	return (0);
 }
 
